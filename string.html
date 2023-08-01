@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>STRING</title>
+</head>
+<body>
+    <script>
+
+// string ""  or ' ', A string stores a series of characters like "John Doe",  string is an object that represents a sequence of characters.
+// types of string 
+
+// concatenation  it combines the two or three  different string into single string 
+            var s = "sai "
+            var b = "baba"
+            var g = s.concat(" ", b)
+            var i = "THE CreaTivity is an ART"
+            var a = i.concat("", g)
+          //  console.log(a)
+
+console.log("concat with using + ", s + b);
+console.log("concat" ,a.concat(" " ,i));
+console.log("concat" , s.concat(" ",b,"  ",i));
+// console.log(s.concat(b));
+
+//length :-- it will tell the total count of words or letters in given string . console.log(var , let, const .length);
+
+//var i = "the creativity is an ART"
+console.log(i);
+console.log("total length of i  is  ",i.length);
+var sai = "abcdefghijklmno p"
+console.log("total length of sai is ",sai.length);
+
+// TOUPPERCASE:-- it is used to convert the lowercase words to upperscase console.log(var, let, const.toUpperCase());
+// var sai = "abcdefghijklmno p"
+
+console.log("before the uppercase",sai);
+console.log("after the uppercase",sai.toUpperCase());
+
+
+// TOlowercase :-- it is used to convert the uppercase word to lowercase console.log(var, let, const.toLowerCase);
+
+//            var i = "the creativity is an ART"
+
+console.log("before the lowercase",i);
+
+console.log("Afterthe lowercase",i.toLowerCase());
+
+
+// CharAt:-- it will about character position of number which we indicate  , and it with starting number 0 of given string  ... console.log(var.charAt(1));
+// // var sai = "abcdefghijklmno p"
+
+console.log(sai.charAt(0));
+console.log(sai.charAt(1));
+console.log(sai.charAt(2));
+console.log(sai.charAt(5));
+
+console.log(sai.charAt(3,15));
+
+console.log(sai[5]);
+
+//replace :-- it will replace the string , value which we indicate the element or variable...
+
+var tabs = "sai, kumar , ramu , krink "
+console.log("befor replace tabs", tabs);
+console.log("after replace", tabs.replace("krink","TRAIN"));
+  
+console.log(tabs.toUpperCase().replace("RAMU","RAM"));
+
+console.log(tabs.toLowerCase().replace("KUMAR","kraft"));
+
+//startWith, endWith, includes, indexOf 
+// startswith :-- it checks the word or number which we declare  if it is correct the o/p will be true or false
+// endswith :-- it checks the word or number which  we declare  if it is correct the o/p will be true or false it see word shld be last only 
+// includes  :-- it checks the word or number which we declare   it should be the include in the string  or array  o/p will be true or false
+// index of :-- it will check the given letter in string or array and tell position of it and number wise count 
+
+var sem = ("semester  ,  sem2  sem3");
+ console.log(sem.startsWith("s"));// true 
+  console.log(sem.endsWith("s"));// false 
+  console.log("sem2 is includes so o/p is  ",sem.includes("sem2"));// true  
+  console.log(sem.indexOf("r")); // 7
+
+
+
+// slice . split
+// slice :-- slice means it will hide words or numbers or string or array which we indicate from position to some length 
+// split :-- split means it wil  seperate the word to words , letter to to letter in on paragraph or sentence or string ,// split() // splits a string into an array of substrings, and returns the array.
+
+
+var dd  =  "123456789,123456788  "
+var num = "semester , sem1, fail, semmm   m"
+console.log("this is slice ",num.slice(5,14));
+console.log("this is split ",num.split(" "));
+console.log("this is slice ",dd.slice(5,14));
+console.log("this is split ",dd.split(" "));
+
+
+//trim :-- trim is removes spaces from array or string  from starting point or ending point 
+
+
+var tri = "      sai   born on  ten   th        ";
+
+console.log("BEFORE TRIM LENGTH",tri.length);
+console.log("BEFORE TRIM ", tri);
+console.log("AFTER TRIM LENGTH",tri.trim().length);
+console.log("AFTER TRIM ", tri.trim());
+
+// ARRAY :--An array is a special variable, which can hold more than one value [1,2,233,44]
+// 
+// array length :-- it will tell length of return array 
+
+var ages = [22,24,44,55,88,6 ,  ,  "  "    ];
+var arrayclass = ["sai","g","baba",   '  ' ];
+console.log(ages.length);
+console.log(arrayclass.length);
+
+//POP & PUSH :--  it will use in array elements  while remove element we use pop  and while add we use push 
+// pop will remove last element from array 
+
+var city = ["hyd","bengaluru","mysore", "pune  "  ];
+
+console.log(city.pop());
+console.log("after pop ",city);
+console.log(city.push("secunderabad"));
+console.log("after push ",city);
+ 
+// reverse :-- it will make array to reverse  elements 
+
+
+var ss = ["ias", "uoy ", "swiss"  ];
+console.log("befor reverse ",ss);
+ console.log("after reverse ",ss.reverse());
+
+//  join :-- it will make array elements to one string  , it will add space , or which number or word we will give it join to the array
+
+
+var ww = [1,3,4,5,7,9];
+console.log(ww.join(" 22"));
+
+//concat :- it will combine to array into one array 
+
+let array1 = ["sai", "baba"];
+let array2 = ["G"];
+
+console.log(array2.concat(array1));
+
+// fill :-- it wil make word or element which we  assign to it array 
+
+var BB = [ "d", " dd", " mm", "mmm ",  "  ree "  ," ss  "]
+console.log(BB);
+console.log(BB.fill("sai",1,6));
+
+
+// slice :-- it make visible those elements  which we  can declare 
+
+var tree = [ 'tree1',"tree2"," tree3", " tree4 ", " tree55", " tree6"];
+
+console.log(tree);
+console.log(tree.slice(1,3))
+
+// sort :-- it  will arrange in asscending order of all elements in array
+
+var cc = [2,5, 6, 8, 9, 8, 10, 7 ,1];
+console.log(cc.sort());
+
+var y = ["semm", " bring ", "zz", " rest"];
+console.log(y.sort());
+
+// includes and indexOf it wil tell true or false  for includes and indexof it will give position number of it 
+
+var city1 = ["hyd","bengaluru","mysore", "pune  "  ];
+console.log(city1.includes("hyd"));
+ console.log(city1.indexOf("p"));
+
+// splice :-- The splice() method can be used to add new items to an array:
+
+
+var e = ["sai", "baba ", " sen", " seee", " cars "];
+newE = e.splice(3,1);
+console.log(newE);
+ 
+
+
+
+
+
+</script>
+</body>
+</html>  
