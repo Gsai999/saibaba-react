@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        
+    // Print Odd Numbers, Even Number
+    var s = [];
+for (i =0; i<100; i++){
+if(i %2 !==0){
+s.push([i]); 
+}
+}console.log("oddnumbers",s)
+
+
+var b = [];
+for (i =1; i<100; i++){
+if(i %2 ==0){
+b.push([i]); 
+}
+}console.log("even numbers",b)
+
+
+//  calculate the sum of numbers from 1 to 10 in given array 
+
+
+
+let number = 0;
+for(i =1; i<=10; i++){
+    
+    number = number +i;
+    
+}console.log("sum of 1 to 10 numbers :" , number);
+
+
+
+//Calculate the sum of odd numbers greater than 10 and less than 30     
+
+
+var a =[];
+let sum = 0;
+
+for(i = 10; i<=30;i++){
+   if(i % 2 !==0){
+     sum = sum +i;
+   } 
+}console.log(" sume of odd numbers greater than 10 and less than 30 : "+sum);
+
+
+//Find the largest number from the given array
+var array = [1, 22, 33, 55, 23,58, 99, 99.08,101];
+let largest = array[0];
+    
+for(i=0; i<=array.length;i++){
+    if(array[i] > largest){
+largest = array[i];
+    
+}
+}
+
+console.log("the largest number is ",largest);
+
+
+  
+// sorting   
+
+var a = ["sai","pqr","asian", "bamboo","guns"];
+
+var b= ["33","1","3", "44", "2", "55"];
+
+console.log("sort of a ",a.sort());
+console.log("sort of b ", b.sort());
+
+  
+  
+  // least and greatest 
+  
+    const arr = [14, 58, 20, 77, 66, 2, 42, 67, 42, 4]
+    const min = Math.min(...arr)
+    console.log(min)
+
+    const ar = [14, 58, 20, 77, 66, 2, 42, 67, 42, 4]
+    const max = Math.max(...ar)
+    console.log(max)
+
+ //Find the least  number from the given array
+var array = [0.5,1, 22, 33, 55, 23,58, 99, 99.08,101];
+let least = array[0];
+    
+for(i=0; i<=array.length;i++){
+    if(array[i] < least){
+least = array[i];
+    
+}
+}
+
+console.log("the least number is ",least);
+
+  
+  
+  // Reverse order using for loop 
+  
+  
+  var a = [1,2,3,4,5,6,7,7]
+      
+        for (i = a.length-1; i >=0; i--)
+    {
+        console.log(a[i]);
+       
+    }
+    console.log("reverse numbers ",a.reverse());
+  
+  
+    //   Remove Duplicate items from the given array    
+  
+
+let arrr = ["apple", "mango", "apple",
+          "orange", "mango", "mango"];
+  
+function removeDuplicates(arrr) {
+    return arrr.filter((item,
+        index) => arrr.indexOf(item) === index);
+}
+console.log(removeDuplicates(arrr));
+
+let ars = [1,3,4,55,6,55,6,7,8,9,0,0,0]
+ function dup (ars){
+ return ars.filter((nums,index)=>  ars.indexOf(nums)===index);
+ 
+ }
+ console.log("duplicate numbers ",dup(ars));
+
+
+
+
+//Print the positive numbers from the given array
+//var array2 = array1.filter(function (value,index){
+
+
+  let g = [1,2,3,4,-4,-5,-6,7,-8,-8,-9,3,14];
+
+let num = g.filter(function (value,index){
+return value  < 0
+num.push([g]);
+});
+console.log("negative numbers :",num);
+
+//Print the negative numbers from the given array
+
+let numss = [1,2,3,4,-4,-5,-6,7,0,-8,-8,-9,3,14];
+
+let numerical = numss.filter(function (value,index){
+return value  >= 0
+numerical.push([numss]);
+});
+console.log("positive numbers :",numerical);
+
+
+// Print the odd numbers less than 100    
+
+var s = [];
+for (i =0; i<100; i++){
+if(i %2 !==0){
+s.push([i]); 
+}
+}console.log("oddnumbers",s)
+
+
+
+//Print the multiplication table with 7
+
+var multi = 7
+for (i=1; i<=10; i++){
+console.log(i*multi);
+}
+
+
+
+//Palindrome Number 
+
+var str = "sai";
+const arrayValues = str.split('');
+
+// reverse the array values
+const reverseArrayValues = arrayValues.reverse();
+
+// convert array to string
+const reverseString = reverseArrayValues.join('');
+
+console.log(str);
+
+if(str == reverseString) {
+    console.log('It is a palindrome');
+}
+else {
+    console.log('It is not a palindrome');
+
+}
+
+        </script>
+</body>
+</html>
