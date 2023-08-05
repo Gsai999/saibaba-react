@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>string </title>
+</head>
+<body>
+    <script>
+        // strings are  declare by using single quote or double quote
+// string methods are many they are -- length , concat , split, tolowercase , touppercase, slice, startswith, endswith , charAT, replace , trim 
+
+
+
+
+// concat ; it combine  two variable to on string 
+
+var a = " sai baba ";
+var b = " ganpa ";
+console.log(b+a);
+console.log("this is concat b + a", b.concat(" ", a));
+
+// length -- it will tel about the length of element in string
+    
+console.log("TOTAL lenght of a is ",a.length);
+
+/* touppercase -- it convert the sting into uppercase when is  lower and upper case  */
+
+var c = " saibabaganpa , sai , baba , GANPa ";
+console.log("before convert to uppercase ",c)
+
+console.log("after convet to uppercase ",c.toUpperCase());
+
+/* tolowercase -- it will convert string into  tolowerase when it in uppercase or combine of upper and lower 
+*/
+
+
+var c = "SAIBABAGANPA , SAI , BABA , GANPA "
+
+console.log("before convert in to lowercase",c);
+console.log("after convert in lowercase ", c.toLowerCase());
+
+
+
+// startswith and endswith -- it will declare the true or false like boolean which we give a  certain element  start and end 
+
+var d = "12345678stuvwxyz"
+
+console.log("this is  startwith o/p ",d.startsWith("1", "2"));
+
+console.log("this is endwith o/p ", d.endsWith("Z"||"z"));
+
+// split & slice :-- A string can be converted to an array with the split() method:
+// slice it show nly which we make elements to hide for some security purpose 
+var s = "abcdefgh  jilm  nopqrs";
+
+console.log("split for s and showing o/p is ",s.split(" "));
+
+console.log("slice is for s and is o/p ",s.slice(2,5));
+
+// charAt The charAt() method returns the character at a specified index (position) in a string:
+
+
+var ss = "abcde  fgh  jilm  nopqrs";
+
+console.log("this is wil give position of character o/p",ss.charAt("7"));
+
+
+// replace :-- it will replace the element or word in string
+
+let e = " sai , ram , ganpa , 10";
+
+console.log("before replace ", e);
+console.log("after replace ", e.replace("ram ","baba"));
+
+
+// trim -- trim will remove space in string at both  point 
+
+
+var aa = "   sai baba ganpa         ";
+console.log("before trim ",aa);
+console.log("before trim the length is ", aa.length);
+console.log("after trim the length is ", aa.trim().length);
+console.log("after trim ",aa.trim());
+
+        
+        
+        
+        </script>
+</body>
+</html>
